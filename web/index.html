@@ -1,0 +1,36 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            .caja
+            {
+                height:200px;
+                width: 200px;
+                border: solid 2px black;
+            }
+            .dos
+            {
+                position: absolute;/*lo mueve desde body porque no hay nada que no sea estático*/
+                top: 50px;
+              /*  position: relative;/*Va estar dentro del flujo html si no lo desplazamos no pasa nada con él. Si se quiere mover un poco una caja el relative es lo más cómodo*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="caja">
+            caja 1
+        </div>
+        <div class="caja dos">
+            caja 2
+        </div>
+        <div class="caja">
+            caja 3
+        </div>
+    </body>
+</html>
